@@ -5,9 +5,9 @@ fn main() {
 
 
     for current_number in (3..u64::MAX).step_by(2) {
-        if current_number % 1000001 == 0 {
-            println!("{}", prime_numbers.len());
-        }
+        // if current_number % 1000001 == 0 {
+        //     println!("{}", prime_numbers.len());
+        // }
 
         let current_numbers_square_root = (current_number as f64).sqrt() as u64;
 
@@ -28,6 +28,7 @@ fn main() {
 
         if current_number_could_be_prime {
             prime_numbers.push(current_number);
+            println!("{current_number}");
         }
     }
 }
