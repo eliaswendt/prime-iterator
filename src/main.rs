@@ -8,7 +8,7 @@ struct PrimeIterator {
 
 impl PrimeIterator {
     pub fn new() -> Self {
-        let mut discovered_primes: Vec<u64> = Vec::with_capacity(1000000000);
+        let mut discovered_primes: Vec<u64> = Vec::new();
         discovered_primes.push(2); // per definition
         discovered_primes.push(3); // optimization: its faster to only search on odd numbers
 
